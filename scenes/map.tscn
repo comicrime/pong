@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bga2r1y82usoe"]
+
+[ext_resource type="Script" uid="uid://cm1lbkjj1dj5j" path="res://src/map.gd" id="1_2klcf"]
+[ext_resource type="PackedScene" uid="uid://54joj4ptlwkm" path="res://scenes/goal_area.tscn" id="1_4xfga"]
+[ext_resource type="PackedScene" uid="uid://ckdbepq0nx0tf" path="res://scenes/world_border.tscn" id="2_paxxb"]
+[ext_resource type="PackedScene" uid="uid://cqj7i7f7hoyvy" path="res://scenes/platform.tscn" id="3_gldc4"]
+[ext_resource type="PackedScene" uid="uid://2yr6gb3ofqdj" path="res://scenes/ball.tscn" id="4_0cso3"]
+
+[node name="map" type="Node2D"]
+script = ExtResource("1_2klcf")
+
+[node name="goal_area_left" parent="." instance=ExtResource("1_4xfga")]
+position = Vector2(-10, 326)
+
+[node name="goal_area" parent="." instance=ExtResource("1_4xfga")]
+position = Vector2(1162, 326)
+
+[node name="world_border_up" parent="." instance=ExtResource("2_paxxb")]
+position = Vector2(575, -10)
+
+[node name="world_border" parent="." instance=ExtResource("2_paxxb")]
+position = Vector2(575, 658)
+
+[node name="platform_1" parent="." instance=ExtResource("3_gldc4")]
+position = Vector2(14, 324)
+
+[node name="platform_2" parent="." instance=ExtResource("3_gldc4")]
+position = Vector2(1137, 324)
+is_bot = true
+
+[node name="ball" parent="." instance=ExtResource("4_0cso3")]
+position = Vector2(577, 324)
+direction = Vector2(-1, 1)
