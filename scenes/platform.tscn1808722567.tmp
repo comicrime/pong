@@ -3,11 +3,7 @@
 [ext_resource type="Script" uid="uid://bw2htbvc6oaap" path="res://src/platform.gd" id="1_ba0x2"]
 [ext_resource type="Script" uid="uid://dlw6eebj4e58n" path="res://src/mesh_instance_2d.gd" id="2_nlgqw"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nlgqw"]
-albedo_color = Color(1, 0.91764706, 0, 1)
-
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_7c1e6"]
-material = SubResource("StandardMaterial3D_nlgqw")
 radius = 10.0
 height = 140.0
 
@@ -24,4 +20,3 @@ script = ExtResource("2_nlgqw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=935825116]
 shape = SubResource("CapsuleShape2D_c1fhm")
-debug_color = Color(1, 1, 1, 0.41960785)
