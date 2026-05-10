@@ -1,3 +1,3 @@
 # Pong
 
-![screenshot](./screenshot.png)
+![screenshot](./screenshot.jpg)
