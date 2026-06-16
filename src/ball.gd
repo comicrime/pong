@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 signal ball_move(ball: Ball)
 
-const initial_speed:float = 400
+const initial_speed:float = 200
 
 @export var direction:Vector2 = Vector2(1,1)
 @export var speed:float 

@@ -43,7 +43,7 @@ func _process(delta: float) -> void:
 	else:
 		self.velocity.y = move_toward(velocity.y, 0, SPEED)
 		
-	move_and_slide()
+	move_and_collide(self.velocity * delta)
 
 func _on_ball_move(ball:Ball) -> void:
 	self.ball = ball
